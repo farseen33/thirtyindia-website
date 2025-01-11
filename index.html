@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --dark-gold: #DAA520;
+            --primary-black: #1A1A1A;
+            --off-white: #F8F8F8;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--primary-black);
+            line-height: 1.6;
+            background-color: var(--off-white);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background: var(--primary-black);
+        }
+
+        .logo-image {
+            width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .header {
+            background-color: var(--primary-black);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .header h2 {
+            color: var(--primary-gold);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--primary-gold);
+        }
+
+        .section h2 {
+            color: var(--primary-black);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-gold);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .section li:before {
+            content: "•";
+            color: var(--primary-gold);
+            position: absolute;
+            left: 0;
+        }
+
+        .contact {
+            background: var(--primary-black);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact h2 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-gold);
+        }
+
+        .contact p {
+            margin: 1rem 0;
+        }
+
+        .highlight {
+            color: var(--primary-gold);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary-gold);
+            color: var(--primary-black);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--dark-gold);
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .logo-image {
+                width: 150px;
+            }
+
+            .header {
+                padding: 2rem 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                margin: 1rem 0;
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .logo-image {
+                width: 120px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <svg viewBox="0 0 200 100" width="200" height="100">
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="24" font-weight="bold">
+                THIRTYINDIA
+            </text>
+            <path d="M160 30 L180 30 L170 50 Z" fill="#FFD700"/>
+        </svg>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <h2>Your Digital Advertising Partner</h2>
+            <p>Elevating Brands Through Innovation</p>
+        </div>
+    </div>
+
+    <div class="content container">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>ThirtyIndia is at the forefront of digital advertising innovation, delivering cutting-edge solutions that transform how brands connect with their audience. Our strategic approach combines premium screen locations with advanced technology to maximize your brand's impact.</p>
+        </div>
+
+        <div class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Premium Digital Billboard Networks</li>
+                <li>Interactive Display Solutions</li>
+                <li>Dynamic Content Management</li>
+                <li>Strategic Location Planning</li>
+                <li>Real-time Campaign Analytics</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Strategic Premium Locations</li>
+                <li>State-of-the-art Display Technology</li>
+                <li>24/7 Technical Support</li>
+                <li>Customized Advertising Solutions</li>
+                <li>Proven ROI for Advertisers</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <p>Email: <span class="highlight">info@thirtyindia.in</span></p>
+            <p>Phone: <span class="highlight">+91 8304804424</span></p>
+            <h3>Ready to Transform Your Advertising Strategy?</h3>
+            <a href="mailto:info@thirtyindia.in" class="cta-button">Contact Us Today</a>
+        </div>
+    </div>
+</body>
+</html>
